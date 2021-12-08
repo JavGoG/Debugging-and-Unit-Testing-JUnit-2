@@ -1,6 +1,8 @@
 package com.javigonzalez;
 
 
+import org.jetbrains.annotations.NotNull;
+
 public class Utilities {
 
     // Returns a char array containing every nth char. When
@@ -60,7 +62,7 @@ public class Utilities {
     public int converter2(int a, int b){
         return a/b;}
 
-    public String nullIfOddLength(String source) {
+    public String nullIfOddLength(@NotNull String source) {
         if(source.length() % 2 == 0) {
             return source;
         }
